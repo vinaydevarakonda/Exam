@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="heading" style="color: rgba(0,0,255,1)"></h1>
+</body>
+</html>
+
+<script>
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+    
+    today = yyyy + '/' + mm +'/' + dd;
+    document.getElementById('heading').innerHTML = today;
+    </script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#main {
+  width: 300px;
+  padding: 10px 20px 20px 20px;
+  margin: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+#input1, #input2, #input3, #btn {
+  margin-bottom: 15px;
+}
+
+</style>
+<body>
+    <div id="main">
+        <h2>Largest Number Predictor</h2>
+        <label for="input1">1st Number:</label>
+        <input id="input1" type="number" placeholder="Enter 1st Number" />
+        <label for="input2">2nd Number:</label>
+        <input id="input2" type="number" placeholder="Enter 2nd Number" />
+        <label for="input3">3rd Number:</label>
+        <input id="input3" type="number" placeholder="Enter 3rd Number" />
+        <button type="submit" id="btn">Find</button>
+        <label for="input4">Result:</label>
+        <input id="input4" type="text" placeholder="Result" readonly />
+    </div>
+<script>
+let input1=document.getElementById("input1");
+let input2=document.getElementById("input2");
+let input3=document.getElementById("input3");
+let input4=document.getElementById("input4");
+let btn=document.getElementById("btn");
+
+btn.onclick = function(){
+
+if(input1.value.length !== 0 && input2.value.length !== 0 && input3.value.length !== 0) {
+   var in1 = parseInt(input1.value);
+    var in2 = parseInt(input2.value);
+    var in3 = parseInt(input3.value);
+    if(in1 > in2 && in1 > in3) {
+     input4.value = in1;
+    } else if(in2 > in1 && in2 > in3) {
+     input4.value = in2;
+    } else {
+     input4.value = in3;
+    }
+  }
+}
+</script>
+</body>
+</html>
