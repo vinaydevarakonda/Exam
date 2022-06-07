@@ -1,0 +1,40 @@
+body{
+    background-color: rgba(72,61,139,1);
+}
+
+h2{
+   text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    color: rgba(72,61,139,1);
+}
+
+#main{
+    width: 600px;
+    margin-top: 200px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 450px;
+    border: 2px solid yellow;
+    padding: 10px 20px 20px 50px;
+    background-color: rgba(220,220,220,1);
+}
+
+#input1,#input2{
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+#btn{
+    margin-bottom: 35px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(72,61,139,1);
+
+}
+
+label{
+    font-size: 1.1em;
+}

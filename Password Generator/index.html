@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+		<meta charset='utf-8'>
+		<title>Password Generator</title>
+		<link rel="stylesheet" href="css/PasswordGenerator.css" type="text/css">
+	</head>
+	<body>
+		<h1>Password Generator</h1>
+		<label id=result></label>
+		<table>
+			<tr>
+				<td>
+					<label>Password Generator</label>
+				</td>
+				<td>
+					<select id='length'>
+						<option value=8>8</option>
+						<option value=16>16</option>
+						<option value=32>32</option>
+						<option value=64>64</option>
+						<option value=128>128</option>
+						<option value=256>256</option>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Include Symbols</label>
+				</td>
+				<td>
+					<input id='symbols' type="checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Include Numbers</label>
+				</td>
+				<td>
+					<input id='numbers' type="checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Include Lowercase Characters</label>
+				</td>
+				<td>
+					<input id='lower-case' type="checkbox">				
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Include Uppercase Characters</label>				
+				</td>
+				<td>
+					<input id='upper-case' type="checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button id='generate-button'>Generate Password</button>
+				</td>
+				<td>
+					<button id='clear-button'>Clear</button>
+				</td>
+			</tr>
+		</table>
+		<script src="js/PasswordGenerator.js" type="text/javascript"></script>
+	</body>
+</html>

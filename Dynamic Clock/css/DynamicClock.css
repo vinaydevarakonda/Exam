@@ -1,0 +1,63 @@
+
+#container {
+  display: flex;
+  margin: auto;
+  margin-top: 90px;
+}
+
+#time {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: auto;
+}
+
+#hour {
+  color: rgb(128, 226, 226);
+  padding: 10px;
+}
+
+#min {
+  color: rgb(128, 226, 226);
+  padding: 10px;
+}
+
+#sec {
+  color: rgb(128, 226, 226);
+  padding: 10px;
+}
+
+#DMY {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 10px;
+}
+
+#date {
+  padding: 10px;
+  color: rgb(0, 128, 128);
+}
+
+#month {
+  padding: 10px;
+  color: rgb(0, 128, 128);
+}
+
+#year {
+  padding: 10px;
+  color: rgb(0, 128, 128);
+}
+
+#sep {
+  padding: 10px;
+}
+
+#head {
+  margin: 20px auto;
+  color: rgb(188, 143, 143);
+}
+
+#hr {
+  width: 600px;
+}
